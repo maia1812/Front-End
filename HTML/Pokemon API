@@ -68,7 +68,7 @@
         <input type="text" id="pokemon">
         <button type="button" onclick="inserirPokemon()">Inserir</button>
         <div id="pokemon"></div>
-        
+    
 
     </form>
     </div>
@@ -131,6 +131,7 @@
         // Diz que a resposta vai ser retornada em formato JSON
         .then (res => res.json())
         // local onde posso manipular a resposta da API
+        // quando a API dá certo
         .then (data => {
             // data é a variável que está guardando os dados da API
             console.log(data)
@@ -144,7 +145,29 @@
             document.getElementById('pokemon').innerHTML += 
             '<br><img src="'+ data.sprites.front_default+ '" width="150">';
         })
+
+        .catch(error => { // quando a API dá errado
+            chamaGatinho();
+            
+        })
+
+        .finally (() => {
+            console.log('Processamenti Finalizado')
+        })
+
+        function chamaGatinho() {
+            fetch('https://api.thecatapi.com/v1/images/search')
+        .then (res => res.json())
+        .then (data => {
+            console.log(data)
+
+            document.getElementById('pokemon').innerHTML = 
+            '<br><img src="'+data[0].url+ '" width="150">';
+        })
+
+        
         }
+    }
 
         
     </script>
