@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma</title>
+</head>
+<style>
+
+    header {
+        background: #FFFFFF;
+        height: 80px;
+    }
+
+    body {
+        padding: 0 5px;
+    }
+    .menu {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .camera {
+        width: 25px;    
+        opacity: 1;
+    }
+
+    .pesquisa {
+        background: #d8d8d8;
+        opacity: 56%;
+        width: 1438px;
+        height: 45px;
+        border-radius: 5px;
+        padding: 0 10px;
+    }
+
+    .perfil {
+        border: 1px solid black;
+        display: block;
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+    }
+
+    .font {
+        font-family: "Mulish", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+
+    main {
+        background: #d8d8d8;
+    }
+
+    h3 {
+        color: #202024;
+        font-size: 17px;
+        font-family: "Mulish", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        padding: 7px 0;
+    }
+
+    .base {
+        padding: 16px 40px;
+        background: #d8d8d8;
+    }
+
+    .img1 {
+        width: 390px;
+        height: 250px; 
+        border-radius: 5px;
+    }
+
+    .fundo {
+        background: #FFFFFF;
+        height: 353px;
+        width: 390px;
+        border-radius: 5px;
+        display: flex;
+        gap: 70px;
+        justify-content: center;
+    }
+    
+
+</style>
+<body class="font">
+    <header>
+      <ul class="menu">
+         <div><img src="img/simbolo-de-interface-de-camera-fotografica-para-botao.png" class="camera"></div>
+         <li>Home</li>
+         <li>Galeria</li>
+         <div class="pesquisa">
+            <p>Pesquise por imagens e coleções</p>
+         </div>
+         <div>
+            <img src="img/826dd247171de89c61fb979ba3dd4fe0ab0e4fd5.jpg" class="perfil">
+         </div>
+      </ul>
+    </header>
+
+    <main>
+        <div class="base">
+            <h3>Galeria</h3>
+            <div>
+                 <div class="fundo">
+                    <img src="img/a2ae231f150d823c57aa56be4a711c8d5b0e373a.jpg" class="img1">
+                    <!-- <img src="img/795344754ff0bdbe25a0e494e4416d7e48d01ab3.jpg" class="img1">
+                    <img src="img/dc98c5db44c3fe30ab593d5d1a29369895adff38.jpg" class="img1"> -->
+                </div>
+
+                <br>
+
+                 <div class="fundo">
+                   <img src="img/d440d66676e16e51b159ff519525cc1bf836d765.jpg" class="img1">
+                    <!-- <img src="img/a52267aeb831aaaa17d90c2d555eb24f8e9644a0.jpg" class="img1">
+                    <img src="img/0e57a0e2a8b0de2e904de82f795c2da1bccf8015.jpg" class="img1"> -->
+                 </div>
+
+                 <br>
+
+                 <div class="fundo">
+                   <img src="img/650720fd835fee3d69a68aa76cee86e46740a3f8.jpg" class="img1">
+                    <!-- <img src="img/a14316ee2a94275d1934b53ff044087e750168c7.jpg" class="img1">
+                    <img src="img/307c7430a7bed4abcba5fdd99bb52bc27314ca0e.jpg" class="img1"> -->
+                 </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
